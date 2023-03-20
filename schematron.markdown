@@ -72,7 +72,7 @@ additional material inside the root element):
 Schematron rules can be embedded in a TEI ODD file but we have to be 
 careful about namespaces. The first thing we want to do is modify the 
 default namespace declarations in our Schematron file. Adding 
-```<sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"\>``` as the 
+```<sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>``` as the 
 first child element of the root will help us avoid namespace errors. 
 It will require that the rules we write have the "sch:" namespace before 
 Schematron elements and the "tei:" namespace before the TEI elements 
@@ -83,7 +83,7 @@ namespaces in practice.
 <?xml version="1.0" encoding="UTF-8"?>
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
-    <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"\>
+    <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
         ...
         
 </sch:schema>
