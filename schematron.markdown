@@ -23,6 +23,8 @@ See my [ODD Customization](../ODD/) page for an introductory tutorial on writing
 	* [Errors and Warnings](#errors)
 	* [XPath](#xpath)
 * [Embedding Rules in Your ODD](#embedding)
+	* [Configuring your ODD](#ODDconfiguration)
+	* [Inserting Rules](#insertingRules)
 * [More Advanced Uses of Schematron](#advanced)
 	* [The \<let\> Element](#let)
 	* [Creating a List of Values](#list)
@@ -248,8 +250,19 @@ _____
 
 ## <a name="embedding"/>Embedding Rules in Your ODD
 
-Since the the rules in our Schematron file contain namespaces on all 
-elements, we can simply cut-and-paste into our ODD. Schematron rules 
+### <a name="ODDconfiguration"/>Configuring your ODD
+	
+We have written our Schematron rules so that they are ready to be embedded 
+into our TEI ODD customization. Before we can do this, however, we must add 
+the Schematron namespace to our TEI ODD file. The namespace attributes required 
+on the \<TEI\> root element for this purpose are as follows (n.b. your customization 
+may require additional namespaces).
+``` 
+<TEI xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0">
+```
+
+### <a name="insertingRules"/>Inserting Rules
+Schematron rules 
 go inside a \<constraint\> element inside a \<constraintSpec\> element. 
 The @ident attribute provides a name for the rule in the resulting 
 RelaxNG. The @scheme attribute requires the value "schematron" since 
