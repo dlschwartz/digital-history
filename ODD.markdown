@@ -19,6 +19,7 @@ schema using a website maintained by the TEI Consortium called [Roma](https://ro
 
 ### Table of Contents:
 * [Minimum Requirements](#requirements)
+	* [Getting Started](#starting)
 	* [Header](#teiHeader)
 	* [Naming the Customization](#schemaSpec)
 	* [Including/Excluding Elements](#moduleRef)
@@ -40,6 +41,24 @@ schema using a website maintained by the TEI Consortium called [Roma](https://ro
 _____
 _____
 ## <a name="requirements"/>Minimum Requirements for Valid ODD
+
+### <a name="starting"/>Getting Started
+The easiest way to get started is to open a new file in oXygen and select "ODD Customization\[TEI\]". 
+The result is a file with the following declaration and root. You may not need all of the namespace 
+declarations on the \<TEI>\ root element but should feel free to leave them as they come.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+```
+
+### <a name="teiHeader"/> TEI Header
+If you have gotten far enough with TEI to be thinking about writing your own customization,
+I'm going to assume you understand the basics of the header and what you might want to do 
+with the header in your ODD. Recall that we write ODD customizations in part to document our
+TEI projects. You will want to include header information that helps readers understand the 
+customization and the reasons it was created. 
 
 ### <a name="teiHeader"/>Header: [\<teiHeader\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html){:target="_blank"}
 The easiest way to see what is minimally required in the header is to 
