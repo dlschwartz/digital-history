@@ -45,13 +45,15 @@ _____
 ### <a name="starting"/>Getting Started
 The easiest way to get started is to open a new file in oXygen and select "ODD Customization\[TEI\]". 
 The result is a file with the following declaration and root. You may not need all of the namespace 
-declarations on the \<TEI>\ root element but should feel free to leave them as they come.
+declarations on the \<TEI\> root element but should feel free to leave them as they come for the time being.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
   xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
 ```
+If you plan to embed Schematron rules into your ODD, see my [Schematron](../schematron/#embedding) page 
+for an addition required namespace declaration.
 
 ### <a name="teiHeader"/> TEI Header
 If you have gotten far enough with TEI to be thinking about writing your own customization,
