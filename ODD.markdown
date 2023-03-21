@@ -53,7 +53,7 @@ declarations on the \<TEI\> root element but should feel free to leave them as t
   xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
 ```
 If you plan to embed Schematron rules into your ODD, see my [Schematron](../schematron/#embedding) page 
-for an addition required namespace declaration.
+for an additional required namespace declaration.
 
 ### <a name="teiHeader"/> TEI Header
 If you have gotten far enough with TEI to be thinking about writing your own customization,
