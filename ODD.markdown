@@ -55,19 +55,13 @@ declarations on the \<TEI\> root element but should feel free to leave them as t
 If you plan to embed Schematron rules into your ODD, see my [Schematron](../schematron/#embedding) page 
 for an additional required namespace declaration.
 
-### <a name="teiHeader"/> TEI Header
-If you have gotten far enough with TEI to be thinking about writing your own customization,
+### <a name="teiHeader"/>Header: [\<teiHeader\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html){:target="_blank"}
+If you have gotten far enough with the TEI to be thinking about writing your own customization,
 I'm going to assume you understand the basics of the header and what you might want to do 
 with the header in your ODD. Recall that we write ODD customizations in part to document our
-TEI projects. You will want to include header information that helps readers understand the 
-customization and the reasons it was created. 
+TEI projects. You will want to include header information that helps readers understand your customization and the reasons it was created. 
 
-### <a name="teiHeader"/>Header: [\<teiHeader\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html){:target="_blank"}
-The easiest way to see what is minimally required in the header is to 
-open a new file in oXygen and select ODD Customization\[TEI\]. If you have 
-gotten far enough with TEI to be thinking about writing your own customization
-I'm going to assume you understand the basics of the header and what you 
-might want to do with the header in your ODD.
+
 
 ### <a name="schemaSpec"/>Naming the Customization: [\<schemaSpec\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html){:target="_blank"}
 All of the actual customization will go inside the \<schemaSpec\> element.
