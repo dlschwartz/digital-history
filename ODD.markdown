@@ -194,10 +194,15 @@ elements listed can appear in any order.
     </content>
 </elementSpec>
 ```
-Note as well that \<sequence\> without a @preserveOrder attribute has a default 
+Note that \<sequence\> without a @preserveOrder attribute has a default 
 value equivalent to including the attribute with a value of "false." In general, 
 I find it best to err on the side of specificity and put \<elementRef\> 
 elements inside \<sequence\> along with a @preserveOrder attribute.
+
+Note as well that \<elementRef\> without @minOccurs and @maxOccurs has default values
+for those attributes of "1". In other words, not indicating your desired values for 
+@minOccurs and @maxOccurs means that they will be required to appear one and 
+only one time.
 
 Where \<sequence\> allows you to indicate what elements can appear 
 in a given context and whether or not they must appear in order, the 
